@@ -58,11 +58,11 @@ const Index = () => {
             className="text-center mb-16"
           >
             <div className="text-xs font-semibold py-1 px-3 bg-primary/10 text-primary rounded-full inline-block mb-4">
-              INTERACTIVE TIMELINE
+              ИНТЕРАКТИВНАЯ ХРОНОЛОГИЯ
             </div>
-            <h2 className="text-4xl font-bold mb-4">The Microsoft & Windows Journey</h2>
+            <h2 className="text-4xl font-bold mb-4">Путь Microsoft и Windows</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore the evolution from humble beginnings to global dominance, including the paths not taken.
+              Исследуйте эволюцию от скромного начала до глобального доминирования, включая нереализованные проекты.
             </p>
           </motion.div>
           
@@ -78,7 +78,7 @@ const Index = () => {
             
             {filteredItems.length === 0 && (
               <div className="text-center py-16">
-                <p className="text-xl text-muted-foreground">No items match the current filter.</p>
+                <p className="text-xl text-muted-foreground">Нет элементов, соответствующих текущему фильтру.</p>
               </div>
             )}
           </div>
@@ -95,9 +95,9 @@ const Index = () => {
             <div className="text-xs font-semibold py-1 px-3 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 rounded-full inline-block mb-4">
               MICROSOFT
             </div>
-            <h2 className="text-4xl font-bold mb-4">The Birth of a Tech Giant</h2>
+            <h2 className="text-4xl font-bold mb-4">Рождение технологического гиганта</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From a small startup to one of the world's most valuable companies.
+              От небольшого стартапа до одной из самых ценных компаний в мире.
             </p>
           </motion.div>
           
@@ -105,36 +105,36 @@ const Index = () => {
             <div className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Founded in 1975</h3>
+                  <h3 className="text-2xl font-bold mb-4">Основана в 1975 году</h3>
                   <p className="text-muted-foreground mb-4">
-                    Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, in Albuquerque, New Mexico. The company was initially focused on developing and selling BASIC interpreters for the Altair 8800 microcomputer.
+                    Microsoft была основана Биллом Гейтсом и Полом Алленом 4 апреля 1975 года в Альбукерке, Нью-Мексико. Изначально компания была сосредоточена на разработке и продаже интерпретаторов BASIC для микрокомпьютера Altair 8800.
                   </p>
                   <p className="text-muted-foreground">
-                    The name "Microsoft" is a portmanteau of "microcomputer" and "software." Gates and Allen's vision was "a computer on every desk and in every home," which seemed ambitious at the time but eventually became reality.
+                    Название "Microsoft" является сочетанием слов "microcomputer" и "software". Видение Гейтса и Аллена заключалось в том, чтобы обеспечить "компьютер на каждом столе и в каждом доме", что казалось амбициозным в то время, но в конечном итоге стало реальностью.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Key Milestones</h3>
+                  <h3 className="text-2xl font-bold mb-4">Ключевые вехи</h3>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <p><strong>1980:</strong> Partnership with IBM to develop an operating system for the IBM PC.</p>
+                      <p><strong>1980:</strong> Партнерство с IBM для разработки операционной системы для IBM PC.</p>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <p><strong>1985:</strong> Release of Windows 1.0, Microsoft's first graphical user interface.</p>
+                      <p><strong>1985:</strong> Выпуск Windows 1.0, первого графического интерфейса Microsoft.</p>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <p><strong>1995:</strong> Windows 95 launch, marking a significant breakthrough in personal computing.</p>
+                      <p><strong>1995:</strong> Запуск Windows 95, ознаменовавший значительный прорыв в персональных вычислениях.</p>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <p><strong>2001:</strong> Xbox debut, expanding Microsoft into the gaming market.</p>
+                      <p><strong>2001:</strong> Дебют Xbox, расширение Microsoft на игровой рынок.</p>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <p><strong>2014:</strong> Satya Nadella becomes CEO, leading Microsoft's transformation toward cloud computing.</p>
+                      <p><strong>2014:</strong> Сатья Наделла становится генеральным директором, возглавляя трансформацию Microsoft в сторону облачных вычислений.</p>
                     </li>
                   </ul>
                 </div>
@@ -154,9 +154,9 @@ const Index = () => {
             <div className="text-xs font-semibold py-1 px-3 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 rounded-full inline-block mb-4">
               WINDOWS
             </div>
-            <h2 className="text-4xl font-bold mb-4">Evolution of Windows</h2>
+            <h2 className="text-4xl font-bold mb-4">Эволюция Windows</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From a simple graphical interface to the world's most used operating system.
+              От простого графического интерфейса до самой используемой операционной системы в мире.
             </p>
           </motion.div>
           
@@ -201,19 +201,19 @@ const Index = () => {
             className="text-center mb-12"
           >
             <div className="text-xs font-semibold py-1 px-3 bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 rounded-full inline-block mb-4">
-              UNRELEASED
+              НЕВЫПУЩЕННЫЕ
             </div>
-            <h2 className="text-4xl font-bold mb-4">The Windows That Never Were</h2>
+            <h2 className="text-4xl font-bold mb-4">Windows, которых не было</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Exploring the fascinating world of canceled and unreleased Windows versions.
+              Исследование увлекательного мира отмененных и невыпущенных версий Windows.
             </p>
           </motion.div>
           
           <div className="glass dark:glass-dark rounded-2xl overflow-hidden shadow-xl mb-6">
             <div className="p-8">
-              <h3 className="text-2xl font-bold mb-4">The Road Not Taken</h3>
+              <h3 className="text-2xl font-bold mb-4">Непройденный путь</h3>
               <p className="text-muted-foreground mb-6">
-                Throughout Microsoft's history, many Windows versions and projects were developed but never released to the public. These canceled projects offer a fascinating glimpse into alternate paths Microsoft could have taken in the evolution of Windows.
+                За всю историю Microsoft было разработано множество версий Windows и проектов, которые так и не были выпущены для широкой публики. Эти отмененные проекты предлагают захватывающий взгляд на альтернативные пути, которыми Microsoft могла бы пойти в эволюции Windows.
               </p>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

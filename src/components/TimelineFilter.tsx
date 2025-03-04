@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,10 +12,10 @@ interface TimelineFilterProps {
 
 export function TimelineFilter({ activeFilter, onFilterChange }: TimelineFilterProps) {
   const filters: { value: FilterOption; label: string }[] = [
-    { value: "all", label: "All Events" },
-    { value: "microsoft", label: "Microsoft History" },
-    { value: "windows-released", label: "Released Windows" },
-    { value: "windows-unreleased", label: "Unreleased Windows" },
+    { value: "all", label: "Все события" },
+    { value: "microsoft", label: "История Microsoft" },
+    { value: "windows-released", label: "Выпущенные Windows" },
+    { value: "windows-unreleased", label: "Невыпущенные Windows" },
   ];
 
   return (

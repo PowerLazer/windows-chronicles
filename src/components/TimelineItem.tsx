@@ -19,8 +19,8 @@ export function TimelineItem({ item, index }: TimelineItemProps) {
   
   const categoryText = {
     "microsoft": "Microsoft",
-    "windows-released": "Released",
-    "windows-unreleased": "Unreleased",
+    "windows-released": "Выпущена",
+    "windows-unreleased": "Не выпущена",
   }[item.category];
 
   return (
