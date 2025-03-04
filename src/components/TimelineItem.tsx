@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { TimelineItem as TimelineItemType } from "@/data/microsoftHistory";
-import { Badge } from "@/components/ui/badge";
+import { ChevronRightIcon } from "lucide-react";
 
 interface TimelineItemProps {
   item: TimelineItemType;
@@ -11,18 +11,25 @@ interface TimelineItemProps {
 
 export function TimelineItem({ item, index }: TimelineItemProps) {
   const isEven = index % 2 === 0;
-  const categoryColor = {
-    "microsoft": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
-    "windows-released": "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
-    "windows-unreleased": "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+  
+  const categoryConfig = {
+    "microsoft": {
+      color: "bg-blue-100 text-blue-800 border-blue-400",
+      gradient: "from-blue-700 to-blue-500",
+      text: "Microsoft"
+    },
+    "windows-released": {
+      color: "bg-green-100 text-green-800 border-green-400",
+      gradient: "from-green-700 to-green-500",
+      text: "Выпущена"
+    },
+    "windows-unreleased": {
+      color: "bg-orange-100 text-orange-800 border-orange-400",
+      gradient: "from-orange-700 to-orange-500",
+      text: "Не выпущена"
+    },
   }[item.category];
   
-  const categoryText = {
-    "microsoft": "Microsoft",
-    "windows-released": "Выпущена",
-    "windows-unreleased": "Не выпущена",
-  }[item.category];
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -36,29 +43,32 @@ export function TimelineItem({ item, index }: TimelineItemProps) {
         isEven ? "md:flex-row" : "md:flex-row-reverse"
       )}>
         {/* Year Circle */}
-        <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/80 to-primary border border-primary/20 shadow-lg text-white font-bold">
+        <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-400 border-2 border-blue-300 shadow-md text-white font-bold">
           <span className="text-xl">{item.year}</span>
         </div>
         
         {/* Content Card */}
         <div className={cn(
-          "flex-grow glass dark:glass-dark rounded-2xl shadow-lg overflow-hidden",
-          "transition-all duration-300 ease-in-out hover:shadow-xl hover:translate-y-[-5px]",
-          "border border-white/10 dark:border-white/5"
+          "flex-grow bg-white rounded-lg shadow-md overflow-hidden",
+          "transition-all duration-300 ease-in-out hover:shadow-lg",
+          "border-2 border-blue-500"
         )}>
-          <div className="p-6">
-            <div className="flex flex-wrap items-center gap-3 mb-3">
-              <Badge variant="outline" className={cn("rounded-full px-3 py-1", categoryColor)}>
-                {categoryText}
-              </Badge>
-              <h3 className="text-2xl font-bold">{item.title}</h3>
+          <div className={`bg-gradient-to-r ${categoryConfig.gradient} text-white p-3`}>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className={`rounded-sm px-2 py-0.5 text-xs font-medium border ${categoryConfig.color}`}>
+                {categoryConfig.text}
+              </span>
+              <h3 className="text-xl font-bold">{item.title}</h3>
             </div>
-            <p className="text-muted-foreground mb-4">{item.description}</p>
+          </div>
+          
+          <div className="p-4">
+            <p className="text-blue-900 mb-4">{item.description}</p>
             <div className="space-y-2">
               {item.details.map((detail, idx) => (
                 <div key={idx} className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <p className="text-sm text-foreground/80">{detail}</p>
+                  <ChevronRightIcon size={16} className="text-blue-700 mt-1 flex-shrink-0" />
+                  <p className="text-sm text-blue-950">{detail}</p>
                 </div>
               ))}
             </div>

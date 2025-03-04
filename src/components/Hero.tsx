@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-radial from-blue-100 to-transparent dark:from-blue-950/20 dark:to-background opacity-60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-blue-500/30 to-blue-800/50 opacity-60 pointer-events-none"></div>
       
       {/* Floating windows logos (decorative) */}
       <div className="absolute inset-0 pointer-events-none">
@@ -49,7 +49,7 @@ export default function Hero() {
         >
           <div className="inline-block mb-4">
             <div className="text-xs font-semibold py-1 px-3 bg-primary/10 text-primary rounded-full">
-              A DIGITAL JOURNEY THROUGH TIME
+              ЦИФРОВОЕ ПУТЕШЕСТВИЕ ВО ВРЕМЕНИ
             </div>
           </div>
         </motion.div>
@@ -60,7 +60,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
         >
-          The <span className="text-primary">Windows</span> Chronicles
+          Хроники <span className="text-primary">Windows</span>
         </motion.h1>
         
         <motion.p
@@ -69,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10"
         >
-          Explore the evolution of Microsoft and Windows through an interactive timeline — from revolution to innovation, including the unreleased chapters.
+          Изучите эволюцию Microsoft и Windows через интерактивную хронологию — от революции до инноваций, включая невыпущенные главы.
         </motion.p>
         
         <motion.div
@@ -79,9 +79,9 @@ export default function Hero() {
         >
           <button 
             onClick={scrollToTimeline}
-            className="glass dark:glass-dark hover:bg-white/50 dark:hover:bg-black/50 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-lg"
+            className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-lg border border-blue-500/50"
           >
-            <span>Explore Timeline</span>
+            <span>Исследовать хронологию</span>
             <span>
               <ChevronDown size={18} />
             </span>
