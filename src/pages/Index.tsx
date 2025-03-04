@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { timelineData, TimelineItem as TimelineItemType } from "@/data/microsoftHistory";
 import { TimelineItem } from "@/components/TimelineItem";
@@ -58,10 +57,7 @@ const Index = () => {
           <span className="font-bold">Хроники Microsoft Windows</span>
         </div>
         <div className="flex gap-4 text-xs">
-          <a href="#" className="hover:underline">Все продукты</a> |
-          <a href="#" className="hover:underline">Поддержка</a> |
-          <a href="#" className="hover:underline">Поиск</a> |
-          <a href="#" className="hover:underline">microsoft.com</a>
+          <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" className="hover:underline">microsoft.com</a>
         </div>
       </div>
       
@@ -324,7 +320,7 @@ const Index = () => {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <ChevronRightIcon size={16} className="text-orange-700 mt-1 flex-shrink-0" />
-                      <p><strong>Инновационные функции:</strong> Многие функции из отмененных проектов, такие как WinFS из Longhorn, повлияли на будущие технологии Microsoft.</p>
+                      <p><strong>Инновационные ��ункции:</strong> Многие функции из отмененных проектов, такие как WinFS из Longhorn, повлияли на будущие технологии Microsoft.</p>
                     </li>
                     <li className="flex items-start gap-2">
                       <ChevronRightIcon size={16} className="text-orange-700 mt-1 flex-shrink-0" />
